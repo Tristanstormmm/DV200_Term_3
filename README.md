@@ -1,10 +1,10 @@
-# Interactive Development 200 Term 1 - Crypto Compare
+# Interactive Development 200 Term 3 - Sole
 
 ![logo](logo.png)
 
 ## About the Project
 
-The "Crypto Compare" project is a comprehensive data-driven web application aimed at facilitating the comparison of various cryptocurrencies. Leveraging modern development technologies such as Node.js and React, the application integrates the Charts.js framework for advanced data visualization. This project serves as a practical application to explore and analyze intricate cryptocurrency data sets in a user-friendly and informative manner.
+"Sole" is an advanced e-commerce web application designed using modern technologies such as React for the frontend and Node.js for the server. Leveraging the power of MongoDB for the database management, the platform enables seamless transactions and efficient management of the extensive collection of sneakers. With a user-friendly interface, Sole offers an immersive shopping experience for sneaker enthusiasts. Backed by Insomnia, the server ensures smooth communication between the client and server, allowing for secure and reliable data transfer during the purchasing process. Explore a diverse collection of sneakers and enjoy a hassle-free shopping experience with Sole.
 
 ## Getting Started
 
@@ -12,73 +12,46 @@ The "Crypto Compare" project is a comprehensive data-driven web application aime
 
 The following dependencies have been installed for this project:
 
-- **@testing-library/jest-dom:** ^5.16.5
-- **@testing-library/react:** ^13.4.0
-- **@testing-library/user-event:** ^13.5.0
-- **axios:** ^1.3.4
-- **bootstrap:** ^5.2.3
-- **chart.js:** ^4.2.1
-- **chartjs-adapter-date-fns:** ^3.0.0
-- **chartjs-adapter-moment:** ^1.0.1
-- **coinranking-api:** ^1.0.0
-- **date-fns:** ^2.29.3
-- **moment:** ^2.29.4
-- **react:** ^18.2.0
-- **react-chartjs-2:** ^5.2.0
-- **react-dom:** ^18.2.0
-- **react-router-dom:** ^6.10.0
-- **react-scripts:** 5.0.1
-- **web-vitals:** ^2.1.4
+   "axios": "^1.5.0",
+   "bcrypt": "^5.1.1",
+   "joi": "^17.10.1",
+   "joi-password-complexity": "^5.2.0",
+   "jsonwebtoken": "^9.0.2",
+   "bootstrap": "^5.3.1",
+   "cors": "^2.8.5",
+   "dotenv": "^16.3.1",
+   "express": "^4.18.2",
+   "mongodb": "^5.7.0",
+   "mongoose": "^7.4.3",
+   "nodemon": "^3.0.1",
+   "react": "^18.2.0",
+   "react-bootstrap": "^2.8.0",
+   "react-dom": "^18.2.0",
+   "react-icons": "^4.11.0",
+   "react-router-dom": "^6.15.0",
+   "react-scripts": "5.0.1",
+   "sass": "^1.64.1",
+   "web-vitals": "^2.1.4"
+
 
 ### Prerequisites
 
 Before getting started, ensure you have the following software installed:
 
-- [React](https://react.dev/learn/installation)
-- [Chart.js](https://www.chartjs.org/docs/latest/getting-started/installation.html)
-- [Coinranking](https://developers.coinranking.com/api/documentation)
-- [React Router](https://reactrouter.com/en/main)
-
-### Installation
-
-To set up the project and install the necessary dependencies, follow these steps:
-
-1. Clone the repository from GitHub using the following command:
-
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
-
-Replace your-username and your-repository with your actual GitHub username and repository name.
-
-2. Navigate to the project directory:
-
-   cd your-repository
-
-3. Install the required dependencies using NPM:
-
-   npm install
-
-This will install all the dependencies listed in the package.json file, including the specific versions specified for each package.
-
-4. Handle any potential errors or conflicts during the installation process, and refer to the documentation for each dependency for more detailed setup instructions if needed.
-
-   Make sure to replace the placeholders such as your-username and your-repository with your actual GitHub username and repository name. Feel free to customize the instructions as needed to match your project specifics.
+- [Insomnia](https://insomnia.rest/download)
+- [MongoDB](https://www.chartjs.org/docs/latest/getting-started/installation.html)
 
 ## Features and Functionality
 
-The "Crypto Compare" application offers the following key features:
+The "Sole" application offers the following key features:
 
-1. **Landing Dashboard:** Presents a comprehensive overview and breakdown of the most relevant properties of the selected cryptocurrency data set, using interactive Chart.js elements to visualize data.
-   
-![landing](./ReadMe_T1/feature_1.png)
+1. **Landing Dashboard:** Presents a comprehensive overview and breakdown of the featured Sneakers.
 
-2. **Comparison Page:** Includes a dedicated page for comparing two distinct objects from the data set. It utilizes Bar, Pie, and Radar chart to outline and compare the properties of the selected objects.
+2. **Products:** Allows users to see add products avalible and add them to cart, as well as view them.
 
-![comparison](./ReadMe_T1/feature_2.png)
+3. **Cart:** Allows users to see their added products and clear the cart if neccesarry.
 
-3. **Timeline Page:** Displays a dynamic Line Graph that maps the entries of at least 5 different properties across the entire dataset. The timeline is interactive and allows users to change the displayed property via an input.
-
-![timeline](./ReadMe_T1/feature_3.png)
+4. **Checkout:** Displays the items that are going to be bought, as well as a combined total for all the items, after checkout the cart will clear and the user will return to the home screen.
 
 ## Concept Process
 
@@ -86,33 +59,25 @@ The development process involved the following stages:
 
 ### Ideation
 
-The project was conceptualized with the primary aim of simplifying the process of comparing various cryptocurrencies. Taking inspiration from existing cryptocurrency comparison platforms, I brainstormed and designed wireframes to ensure an intuitive user interface.
-
-### User-side Wireframes
-
-The project's wireframes were meticulously designed, including the home, compare, and timeline screens.
-
-![homew](./ReadMe_T1/Home.png)
-![comparew](./ReadMe_T1/Compare.png)
-![timelinew](./ReadMe_T1/Timeline.png)
+The inception of the Sole project was driven by the vision to simplify the sneaker shopping experience for enthusiasts. By analyzing existing e-commerce platforms, the concept was refined to ensure a user-friendly and immersive shopping journey. Wireframes were meticulously designed to create an intuitive user interface.
 
 ## Development Process
 
 ### Highlights
 
-During the development phase, I focused on creating a user-friendly cryptocurrency comparison tool with a comprehensive range of functionalities. The project involved meticulous exploration of cryptocurrency data and the seamless integration of APIs to facilitate efficient data retrieval and visualization. With a strong emphasis on user experience, I strived to ensure intuitive navigation and clear presentation of complex cryptocurrency data. Leveraging the latest technologies in the blockchain space, the project aimed to provide users with a seamless and insightful comparison of various cryptocurrencies, empowering them to make informed investment decisions.
+The development phase of Sole emphasized the creation of a user-centric e-commerce platform that prioritizes a seamless shopping experience. This involved a comprehensive exploration of sneaker data and the seamless integration of APIs to facilitate efficient data management and visualization. With an emphasis on user experience, the development process ensured intuitive navigation and a clear presentation of the extensive sneaker collection. Leveraging cutting-edge technologies, Sole aimed to provide users with an immersive and convenient shopping experience, streamlining the process of finding and purchasing their desired sneakers.
 
 ### Challenges
 
-Throughout the development process, I encountered significant challenges primarily focused on implementing complex chart functionalities and effectively pulling data from the Coinranking API. Overcoming these obstacles provided valuable insights into the intricacies of data visualization and API integration, contributing to an enhanced understanding and proficiency in handling intricate cryptocurrency data sets.```
+Throughout the development journey, various challenges were encountered, primarily centered around implementing complex functionalities and ensuring smooth data retrieval from the server. Overcoming these obstacles led to a deeper understanding of data management and API integration, contributing to an enhanced proficiency in handling intricate e-commerce datasets.
 
 ## Future Implementation
 
-Moving forward, the "Crypto Compare" project has several areas for potential enhancements, including code optimization, increased user interactivity, and enhanced visual engagement. I plan to streamline the code further, improve overall consistency, and introduce additional interactive features to enhance the user experience.
+Moving forward, Sole has significant potential for enhancements. Future plans include optimizing the codebase for improved performance, enhancing user interactivity, and incorporating advanced visualization features. Additionally, the roadmap includes implementing personalized user recommendations and integrating secure payment gateways to further streamline the shopping process.
 
 ## Conclusion
 
-The "Crypto Compare" project has provided me with an invaluable learning experience, highlighting the significance of effective communication, dedicated effort, and technical expertise. Despite the challenges encountered during the development process, this project has been instrumental in enhancing my problem-solving abilities and solidifying my understanding of essential software development principles. I look forward to implementing additional features and improvements in the future, leveraging the valuable knowledge gained from this project.
+The Sole project has been instrumental in fostering a deep understanding of e-commerce development principles and technical expertise. Despite the challenges faced during the development process, the project has reinforced problem-solving abilities and emphasized the significance of effective communication and dedicated effort. With an unwavering commitment to continuous improvement, the Sole team remains dedicated to delivering an exceptional shopping experience for sneaker enthusiasts worldwide.
 
 ## Contact
 
