@@ -1,6 +1,6 @@
 # Interactive Development 200 Term 3 - Sole 
 
-![logo](./ReadMe_T2/logo.png)
+![logo](logo.png)
 
 ## About The Project
 
