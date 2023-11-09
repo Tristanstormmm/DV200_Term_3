@@ -85,4 +85,4 @@ The development of the dental clinic management system has been a rewarding expe
 For any inquiries or further information, please feel free to reach out to:
 
 - **Tristan Storm** - [221195@virtualwindow.co.za]
-- **Project Link** - [Project Link](https://github.com/Tristanstormmm/221195_DV200_Tristan_Storm_Term2_Final/tree/main)
+- **Project Link** - 
